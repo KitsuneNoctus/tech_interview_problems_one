@@ -9,9 +9,39 @@ Note that 1 does not map to any letters. '''
 #         self.next = None
 
 class Solution(object):
-    def addTwoNumbers(self, l1, l2):
+    def letterCombinations(self, digits):
         """
-        :type l1: ListNode
-        :type l2: ListNode
-        :rtype: ListNode
+        :type digits: str
+        :rtype: List[str]
         """
+
+        phone_pad = {
+            '2':['a','b','c'],
+            '3':['d','e','f'],
+            '4':['g','h','i'],
+            '5':['j','k','l'],
+            '6':['m''n','o'],
+            '7':['p','q','r','s'],
+            '8':['t','u','v'],
+            '9':['w','x','y','z']
+        }
+
+        combinations = []
+
+        if digits:
+            for digit in digits
+
+        # def create_map():
+        #     for digit in digits:
+        #
+        #     pass
+
+        # if digits:
+        #     create_map()
+        return combinations
+
+def main():
+    pass
+
+if __name__ == '__main__':
+    main()
