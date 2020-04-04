@@ -29,7 +29,8 @@ class Solution(object):
         combinations = []
 
         if digits:
-            for digit in digits
+            for digit in phone_pad[digits[0]]:
+                list = phone_pad[digit]
 
         # def create_map():
         #     for digit in digits:
@@ -38,10 +39,7 @@ class Solution(object):
 
         # if digits:
         #     create_map()
-        return combinations
-
-def main():
-    pass
-
-if __name__ == '__main__':
-    main()
+        if combinations:
+            return combinations
+        else:
+            return "No combinations"

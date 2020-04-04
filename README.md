@@ -1,6 +1,93 @@
 # Technical Interview Problems
 ## Second Class Homework - April 1, 2020
 
+### Easy Problems:
+
+#### Problem 1
+[Problem 1 Link](https://leetcode.com/problems/merge-two-sorted-lists/)
+
+##### Problem: Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
+
+> Example:
+
+> Input: 1->2->4, 1->3->4
+> Output: 1->1->2->3->4->4
+
+1. Restate:
+    - Merge two sorted linked lists and return a new list that is the two inputs spliced together in sorted order
+2. Clarify:
+    - Are there negative values in these lists?
+    - Are then integers or another data type
+3. Assumptions:
+    - Assuming they're integers for simplicity sake
+    - Size should not be a total factor
+4. Think Out Loud:
+    - Brainstorm Solution:
+        * [Problem Solution](problem_one_easy.py)
+        * Go through bother linked lists with a for loop and append the values to a new linked list
+    - Explain Rationale:
+        * Simple enough to execute
+        * It has a low time complexity
+    - Tradeoffs:
+        * It has a lot of bulk and, being untested, means that it may not work.
+    - Improvements:
+        * Need some more code comments.
+        * There must be an easier way to traverse two lists then the zip and for loop
+
+#### Problem 2
+
+##### Problem: Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
+
+> Example 1:
+
+>Input: 121
+>Output: true
+
+>Example 2:
+
+>Input: -121
+Output: false
+Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
+
+>Example 3:
+
+>Input: 10
+Output: false
+Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
+
+>Follow up:
+
+>Coud you solve it without converting the integer to a string?
+
+1. Restate:
+    - Return True or False on wether or not the **integer** given is a palindrome / can it be read the same way forwards and backward
+2. Clarify:
+    - Is there a size limit to the number?
+    - Should I make it able to take in floats and doubles later?
+    - Do you also want the reverse number returned?
+    - Would you want to original number and reverse number shown, to prove the point?
+    - Should a negative also flip where the negative symbol is?
+3. Assumptions:
+    - Based on the examples, the negative symbol will be flipped
+    - Any size should be allowed
+4. Think Out Loud:
+    - Brainstorm Solution:
+        * [Problem Solution](problem_two_easy.py)
+        * Convert integer to to string, then create a new variable that takes that in reverse
+        * Compare the two strings, if equal, then return true
+    - Explain Rationale:
+        * Easy to execute
+        * It has a low time complexity
+    - Tradeoffs:
+        * None as far as I can tell.
+        * It does require the use of strings, but I find thats okay
+    - Improvements:
+        * Most likely can be broken down to one line.
+
+
+
+### Medium Problems: (Unfinished)
+
 #### Problem 1
 [Problem 1 Link](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)
 
